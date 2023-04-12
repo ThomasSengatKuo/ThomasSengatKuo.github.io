@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fontawesome.com icones utilisable --> 
+</head> 
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logoaforp.png"></a>  <!-- LOGO --> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- icone X --> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li> <!-- MENU --> 
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="entreprise.html">Mes Missions</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="VT.html">Veille Technologique</a></li>
+                    <li><a href="apresbts.html">Mon Futur</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i> <!-- icone barre menu --> 
+        </nav>
+        <h1>Projet 0 Papier</h1>
+    </section>
+
+    <!---Profil content-->
+
+    <section class="profil">
+        <!-- <div class="row"> -->
+            <div class="profil-col">
+                
+                <iframe src="images/1 - PROJ-BDD - Maitenance.pdf" width="100%" height="800px"> </iframe>
+                <p> Ce document constitue l'appel d'offre du client.<br></p>
+                <h2>L'objectif de ce projet</h2><br>
+                <p>L'objectif de ce projet est de créer une application contenant la documentation technique ainsi que la documentation pédagogique des machines de l'AFORP.<br> Nous développons une application qui sera mise à disposition des apprentis via une tablette qui sera fixée devant chacun des systèmes.</p>
+                
+                <h2>Candidature à l'appel d'offre</h2>
+                <iframe src="images/Candidature.pdf" width="100%" height="800px"> </iframe>
+                
+                <h2>Outils et logiciels utilisés</h2>
+                <p> Les outils utilisés pour ce projet sont :</p>
+                <p>- Jira et Confluence : gestion de projet (GANTT, répartition des tâches, documents centralisés)<br>- GitHub : centralisation des fichiers de l’applicationet la gestion des versions<br>- Visual Paradigm : Modèles de données<br>- StarUML : Diagramme de cas d’utilisation<br>- PHPMyAdmin: gestionnairede base de donnéesMySQL<br>- Visual Studio Code (éditeur de code): HTML5/CSS3<br>- Suite MAMP avec le serveur:SGBD MySQL5.7.24/Apache/Interprète PHP 8.0.1</p>
+
+                <h2>Mes réalisations dans ce projet</h2>
+                <p>J'ai tout d'abord participé activement à la création du diagramme des cas d'utilisations (ainsi que plusieurs cas d'utilisation) qui permet d'indiquer ce que les utilisateurs pourront faire sur l'application en fonction de leur niveau de droits :</p>
+                <img src="images/DiagCas.png">
+                <p>J'ai ensuite pu établir le modèle logique de données qui permet de retranscrire ces cas d'utilisations sous forme de tables, dans le but de créer une base de données :</p>
+                <img src="images/MLD.png">
+                <p>A partir des modèles de conception (cas d’utilisation, MLD,…) de l’application j’ai créé plusieurs fonctionnalités en PHP
+                    permettant de faire le lien entre la base de données et l’interface utilisateur de l’application (contrôleur d’après le modèle
+                    d’architecture MVC) :<br><br>
+                    Le premier script créé a été celui qui permet d’exécuter une requête dans la base de données pour récupérer toutes les
+                    informations des systèmes, ces informations sont envoyées à l’interface sous la forme d’un tableau associatif.
+                    Cette fonction est ensuite utilisée dans une boucle qui permet d’afficher chaque machine sur les pages index (en
+                    parcourant le tableau associatif) pour les apprentis ainsi que pour les formateurs avec son nom et sa photo. Un bouton
+                    qui redirige vers la documentation technique est créé et un pour la documentation pédagogique, ceci pour chaque
+                    machine.<br><br>
+                    <img src="images/getSystems.png"><br>
+                    <img src="images/getSystemsindex.png">
+                    J’ai aussi créé un script du nom de connexion.php qui permet à un utilisateur enregistré dans la base de données de se
+                    connecter sur la plateforme. Ce script permet de vérifier que le mot de passe entré corresponde à celui enregistré dans
+                    la base de données (hashé), ceci grâce à la fonction php password_verify qui verifie que le hash corresponde au mot
+                    de passe associé. En cas d’erreur, un message est affiché et l’utilisateur est redirigé vers la page de connexion.<br><br>
+                    Pour assainir les données fournies via le formulaire de connexion, j’ai créé la fonction cleanchamp laquelle supprime les
+                    espaces non nécessaires des champs du formulaire.<br><br>
+                    <img src="images/connexion.png">
+                    Le fichier logout.php permet lui de déconnecter un utilisateur en fermant sa session, il retire le mail et le mot de passe
+                    de la session en cours avant de rediriger vers la page de connexion.<br>
+                    <img src="images/logout.png">
+                    </p>
+
+                    <h2>Quelques images de l'application</h2>
+                    <h3>Page de connexion</h3>
+                    <img src="images/connexion0papier.png" style="width: 80%">
+                    <h3>Index</h3>
+                    <img src="images/index0papier.png" style="width: 80%">
+            
+</div>
+    
+    </section>
+
+                            <!--Footer-->
+
+<section class="footer">
+    <h4>A propos</h4>
+        <p>aaaaaaaaa</p>
+    <div class="icons">
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Thomas Sengat Kuo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="fa fa-copyright"></i> 2022  Tous droits réservés</p>
+
+</section>
+
+<!-------Javascript toggle menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+        function hideMenu(){
+          navLinks.style.right= "-200px";
+    }
+
+  </script>          
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fontawesome.com icones utilisable --> 
+</head> 
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logoaforp.png"></a>  <!-- LOGO --> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- icone X --> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li> <!-- MENU --> 
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="entreprise.html">Mes Missions</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="VT.html">Veille Technologique</a></li>
+                    <li><a href="apresbts.html">Mon Futur</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i> <!-- icone barre menu --> 
+        </nav>
+        <h1>Mise en place d'un outil de ticketing</h1>
+    </section>
+
+    <!---Profil content-->
+
+    <section class="profil">
+        <!-- <div class="row"> -->
+            <div class="profil-col">
+                <h1>Ce projet consitait à mettre en place un outil de ticketing GLPI</h1><br>
+                <iframe src="images/GLPI.pdf#toolbar=0" width="100%" height="800px"> </iframe>
+                    <p>Ici on utilise une VM sous Ubuntu, on installe un serveur LAMP (MariaDB,Apache,PHP) en commande Linux.<br> Ensuite on installe GLPI (outil de gestion des services informatiques) auquel on rajoute l'extension FusionInventory (inventaire et maintenance du parc informatique).<br> On crée ensuite une VM sous Windows 10 dans laquelle des utilisateurs et des groupes sont crées sur GLPI avant d'installer l'agent Fusion Inventory.<br> Pour finir on effectue des tests pour vérifier que l'on peut correctement créer des tickets, des groupes et des utilisateurs.</p><br>
+
+                
+            <!-- </div>
+            <div class="profil-col">
+                <img src="images/channels4_profile.jpg" alt="">
+                
+            </div> -->
+            
+        </div>
+    
+    </section>
+
+                            <!--Footer-->
+
+<section class="footer">
+    <h4>A propos</h4>
+        <p>aaaaaaaaa</p>
+    <div class="icons">
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Thomas Sengat Kuo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="fa fa-copyright"></i> 2022  Tous droits réservés</p>
+
+</section>
+
+<!-------Javascript toggle menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+        function hideMenu(){
+          navLinks.style.right= "-200px";
+    }
+
+  </script>          
+</body>
+</html>

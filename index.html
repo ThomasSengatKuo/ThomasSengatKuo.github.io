@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fontawesome.com icones utilisable --> 
+</head> 
+<body>
+    <section class="header"> <!-- Accueil --> 
+        <nav>
+            <a href="index.html"><img src="images/logoaforp.png"></a>  <!-- LOGO --> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- icone X --> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li> <!-- MENU --> 
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="entreprise.html">Mes Missions</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="VT.html">Veille Technologique</a></li>
+                    <li><a href="apresbts.html">Mon Futur</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i> <!-- icone barre menu --> 
+        </nav>
+    <div class="text-box">
+       <h1>Portfolio de Thomas Sengat Kuo</h1> 
+       <p>BTS SIO Option SLAM</p>
+       <a href="profil.html" class="hero-btn">Cliquez ici !</a>
+    </div>
+    </section>
+
+
+
+                            <!--CTA-->
+
+<section class="CTA">
+    <h1>Cliquez ici pour me contacter</h1>
+    <canvas id="pong" width="800" height="600"></canvas>
+    <script src="pong.js"></script>
+    <a onclick="displayPong()" class="hero-btn">ME CONTACTER</a>
+
+</section>
+
+
+
+                            <!--Footer-->
+
+<section class="footer">
+    <h4>A propos</h4>
+        <p>aaaaaaaaa</p>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/thomas-sengat-kuo/" class="icons">
+        <i class="fa fa-linkedin-square"></i>
+        </a>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Thomas Sengat Kuo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="fa fa-copyright"></i> 2022  Tous droits réservés</p>
+
+</section>
+
+<!-------Javascript toggle menu-------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+        function hideMenu(){
+          navLinks.style.right= "-200px";
+    }
+
+    function displayPong() {
+  var x = document.getElementById("pong");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+  </script>          
+</body>
+</html>

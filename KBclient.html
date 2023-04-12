@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fontawesome.com icones utilisable --> 
+</head> 
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logoaforp.png"></a>  <!-- LOGO --> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- icone X --> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li> <!-- MENU --> 
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="entreprise.html">Mes Missions</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="VT.html">Veille Technologique</a></li>
+                    <li><a href="apresbts.html">Mon Futur</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i> <!-- icone barre menu --> 
+        </nav>
+        <h1>Mise à jour de la Knowledge Base client AB Tasty</h1>
+    </section>
+
+    <!---Profil content-->
+
+    <section class="profil">
+        <!-- <div class="row"> -->
+            <div class="profil-col">
+                <h1>Ce projet consitait à remettre à jour la Knowledge Base client sur tous les articles de Troubleshooting</h1><br>
+                <h2>Avant : Novembre 2021</h2>
+                <img src="images/zendeskarticleexport.PNG" alt="" style="width:100%">
+                    <p>On peut voir dans la colonne "Vote Sum" que la plupart des articles sont soit négatifs soit neutre en terme d'appréciation.</p><br>
+                <h2>Après : Mars 2022</h2>
+                <img src="images/zendeskarticlesexportapr.png" alt="" style="width:100%">
+
+                <h1>Pour nous organiser, nous utilisons Trello</h1><br>
+                <img src="images/Trello Board Doc.png" alt="" style="width:100%">   
+                <p>Nous utilisions le board Trello de l'équipe Produit avec qui nous travaillions conjointement, nous sur la partie article Troubleshooting et eux sur les autres.<br><br> Le fonctionnement est simple : La correction est soumise dans "New", passe en "Under Review" lorsque l'équipe produit valide les changements initiaux, l'article est ensuite corrigé par une traductrice dans "On going", et placé dans "Ready to prod" lorsqu'il est prêt a passer en production.</p><br> 
+                <img src="images/How to check if AB Tasty's tag is installed on my website/carte trello associe.PNG"  style="width:70%"> 
+                <p>Voici un exemple de carte Trello</p>
+                <h1> Avant / Après de l'article de la carte précédente</h1><br>
+                <h2>Avant</h2>
+                <iframe src="images/How to check if AB Tasty's tag is installed on my website/NON EDITED/How to check if AB Tasty's tag is installed on my website EDITED_.pdf" width="80%" height="800px" > </iframe>
+                <br><h2>Après</h2>
+                <iframe src="images/How to check if AB Tasty's tag is installed on my website/EDITED/How to check if the AB Tasty tag is installed on my website_.pdf" width="80%" height="800px"> </iframe>
+            <!-- </div>
+            <div class="profil-col">
+                <img src="images/channels4_profile.jpg" alt="">
+                
+            </div> -->
+            
+        </div>
+    
+    </section>
+
+                            <!--Footer-->
+
+<section class="footer">
+    <h4>A propos</h4>
+        <p>aaaaaaaaa</p>
+    <div class="icons">
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Thomas Sengat Kuo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="fa fa-copyright"></i> 2022  Tous droits réservés</p>
+
+</section>
+
+<!-------Javascript toggle menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+        function hideMenu(){
+          navLinks.style.right= "-200px";
+    }
+
+  </script>          
+</body>
+</html>

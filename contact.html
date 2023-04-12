@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fontawesome.com icones utilisable --> 
+</head> 
+
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logoaforp.png"></a>  <!-- LOGO --> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- icone X --> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li> <!-- MENU --> 
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="entreprise.html">Mes Missions</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="VT.html">Veille Technologique</a></li>
+                    <li><a href="apresbts.html">Mon Futur</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i> <!-- icone barre menu --> 
+        </nav>
+        <h1>Me Contacter</h1>
+    </section>
+
+    <!---Contact content-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10499.141569470863!2d2.355601!3d48.8623026!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5425cdec5000fcbd!2sAB%20Tasty!5e0!3m2!1sfr!2sfr!4v1649834668709!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+<section class="me-contacter">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-building"></i>
+                <span>
+                    <h5>AB Tasty</h5>
+                    <p>19 Rue Michel le Comte, 75003 Paris</p>
+                </span>
+            </div>
+            <!-- <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>06 69 49 34 XX</h5>
+                    <p>Par téléphone</p>
+                </span>
+            </div> -->
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>tsengatkuo@aforp.eu</h5>
+                    <p>Par mail</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+
+            <form action="form-handler.php" method="post">
+                <input type="text" name="nom" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre adresse mail" required>
+                <input type="text" name="objet" placeholder="Objet" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Envoyer votre message</button>
+            </form>
+
+
+        </div>
+    </div>
+
+</section>
+    
+
+                            <!--Footer-->
+
+<section class="footer">
+    <h4>A propos</h4>
+        <p>aaaaaaaaa</p>
+    <div class="icons">
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Thomas Sengat Kuo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="fa fa-copyright"></i> 2022  Tous droits réservés</p>
+
+</section>
+
+<!-------Javascript toggle menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+        function hideMenu(){
+          navLinks.style.right= "-200px";
+    }
+
+  </script>          
+</body>
+</html>
