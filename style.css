@@ -40,7 +40,7 @@ nav img{ /*logo size*/
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 18px;
 }
 .nav-links ul li::after{ 
     content: '';
@@ -386,6 +386,7 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    text-align: start !important;
 }
 
 .skills-col h3{
