@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
+
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
@@ -12,8 +15,8 @@ a, a:hover, a:focus, a:active {
 .header{
     min-height: 100vh;
     width:100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/code.jpg) /*image de fond*/
-    ;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/code3.jpeg);
+
     background-position: center;
     background-size: cover;
     position: relative;
@@ -339,7 +342,7 @@ p{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/code.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/code3.jpeg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -379,13 +382,11 @@ p{
 }
 
 .skills-col{
-    flex-basis: 31%;
+    flex-basis: 45%;
     background: #f3fbff;
     border-radius: 10px;
-    margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
-    transition: 0.5s;
     text-align: start !important;
 }
 
@@ -581,3 +582,4 @@ padding-bottom: 20px;
     margin-bottom: 10px;
     background-color: #000000;
 }
+
