@@ -86,9 +86,13 @@ nav img{ /*logo size*/
     position: relative;
     cursor: pointer;
 
+
 }
+
+
+
 .hero-btn:hover{ /* couleur hover*/
-    border: 1px solid #1DA3B7;
+    border: 1px solid #1da3b7;
     background: #1DA3B7;
     transition: 1s;
 
@@ -105,9 +109,28 @@ nav img{ /*logo size*/
     position: relative;
     cursor: pointer;
 }
+.vt-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 50px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
 .vt-btn:hover{ /* couleur hover*/
     border: 1px solid #2BB24D;
     background: #000000;
+    color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(255, 255, 255); */
+    transition: 1s;
+
+}
+.vt-btn2:hover{ /* couleur hover*/
+    border: 1px solid #1da3b7;
+    background: #1da3b7;
     color: rgb(255, 255, 255);
     /* border: 1px solid rgb(255, 255, 255); */
     transition: 1s;
@@ -190,9 +213,7 @@ p{
     font-weight: 600;
     margin: 10px 0;
 }
-.VT-col:hover{
-  /* box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);   */
-}
+
 
 @media(max-width: 700px){
     .row{
@@ -291,7 +312,7 @@ p{
 .CTA{
   margin: 100px auto;
   width: 80%;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/banner2.jpg) ;  
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/codeX.png) ;  
   background-position: center;
   background-size: cover;
   border-radius: 10px;
