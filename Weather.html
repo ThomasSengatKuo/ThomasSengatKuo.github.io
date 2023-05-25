@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- fontawesome.com icones utilisable --> 
+</head> 
+<body>
+    <section class="sub-header"> 
+        <nav>
+            <a href="index.html"><img src="images/logoaforp.png"></a>  <!-- LOGO --> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  <!-- icone X --> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li> <!-- MENU --> 
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="entreprise.html">Mes Missions</a></li>
+                    <li><a href="projet.html">Projets</a></li>
+                    <li><a href="VT.html">Veille Technologique</a></li>
+                    <li><a href="apresbts.html">Mon Futur</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i> <!-- icone barre menu --> 
+        </nav>
+        <h1>Projet Weather</h1>
+    </section>
+
+    <!---Profil content-->
+
+    <section class="profil">
+        <!-- <div class="row"> -->
+            <div class="profil-col">
+                
+                <iframe src="images/CDC Projet Météo.pdf" width="100%" height="800px"> </iframe>
+                <p> Ce document constitue le cahier des charges du projet.<br></p>
+                <h2>L'objectif de ce projet</h2><br>
+                <p>L'objectif de ce projet est de créer une application mobile permettant aux employés de connaitre les informations météorologiques des chambres afin de pouvoir les réguler dans le but de réduire la consommation d'énergie. La deuxième partie de l'application permet d'équiper chaque chambre d'un dispositif indiquant les données météorologiques de celle-ci</p>
+                
+                
+                <h2>Outils et logiciels utilisés</h2>
+                <p> Les outils utilisés pour ce projet sont :</p>
+                <p>- Jira et Confluence : gestion de projet<br>- GitHub : centralisation des fichiers de l’application et la gestion des versions<br>- Visual Paradigm : Modèles de données<br>- Figma : Outil de maquettage<br>- Visual Studio Code (éditeur de code): HTML 5/CSS 3/React Native 0.70/JavaScript 13 - ECMA-262/Python 3.11.2<br>- Environnement local : ordinateur portable sous Windows 11<br> - Expo Snack : Environnement de test React Native via navigateur  </p>
+
+                <h2>Mes réalisations dans ce projet</h2>
+                <p>L’application a plusieurs types de clients : <br> 
+
+                    <br> - Les hôtes de chambres, pour lesquels les informations propres à chaque chambre sont affichées (température, vitesse du vent, description météo, humidité). 
+                    
+                    <br> - L'administrateur de l’établissement pour qui un tableau de bord contient un affichage des informations de chaque chambre  
+                    
+                    <br> - Les employés de maintenance qui doivent indiquer leurs interventions dans les chambres. 
+                    
+                    L’accès au tableau de bord et au sous-système d’intervention doit être sécurisé, raison pour laquelle j’ai implémenté un mécanisme de connexion.  </p>
+                <h3>Maquette du formulaire de connexion</h3><br>
+                    <img src="images/maquette_connexion.png">
+                <p>J’ai également réalisé l’IHM du composant “tableau de bord” destiné à la partie administrateur de l’hôtel. Ce tableau de bord permettra à l'administrateur d’avoir une vue globale des informations de chacune des chambres. </p>
+                <h3>Maquette du tableau de bord</h3><br>
+                <img src="images/maquette_dashboard.png"><br>
+                
+            <p>J’ai aussi pu ajouter une fonctionnalité en React Native qui permet grâce au dictionnaire ‘weather_picto’ d’afficher le pictogramme associé au code météo actuel via une balise React Native &lt;Image&gt; : </p>
+            <img src="images/codeaffichagepicto.png"><br>
+</div>
+    
+    </section>
+
+                            <!--Footer-->
+
+<section class="footer">
+    <h4>A propos</h4>
+        <p>Site crée dans le contexte de la formation BTS SIO SLAM</p>
+    <div class="icons">
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+    <p>Thomas Sengat Kuo &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="fa fa-copyright"></i> 2022  Tous droits réservés</p>
+
+</section>
+
+<!-------Javascript toggle menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+        function hideMenu(){
+          navLinks.style.right= "-200px";
+    }
+
+  </script>          
+</body>
+</html>
